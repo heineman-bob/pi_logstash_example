@@ -1,6 +1,6 @@
 FROM resin/rpi-raspbian:jessie-20160831  
-RUN apt-get update && \  
-    apt-get -qy install curl ca-certificates python
+RUN apt-get update
+RUN apt-get -qy install curl ca-certificates python
 ADD . .
 RUN python get-pip.py 
 RUN pip install python-logstash
