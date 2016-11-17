@@ -4,4 +4,4 @@ RUN apt-get -qy install curl ca-certificates python
 ADD . .
 RUN python get-pip.py 
 RUN pip install python-logstash
-CMD ["python", "logstash.py"] 
+CMD ["python", "logstash_test.py"] 
