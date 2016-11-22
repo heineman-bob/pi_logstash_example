@@ -19,7 +19,7 @@ while(True):
     # add extra field to logstash message
     additional_info = {
         'cpu_usage': psutil.cpu_percent(),
-        'memory_usage': psutil.virtual_memory().cpu_percent,
+        'memory_usage': psutil.virtual_memory().percent,
         'memory_free': psutil.virtual_memory().free,
         'memory_swap': psutil.swap_memory().percent,
         'disk_space_used': psutil.disk_usage('/').percent,
